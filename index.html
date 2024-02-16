@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,6 +15,7 @@
 <body>
 
     <header class="top center">
+
         <div class="top__left">
 
             <a href="index.html" class="top__left__link">
@@ -23,31 +25,46 @@
             </a>
 
             <div class="top__dropdown">
-                <button class="dropdown">Browse
-                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path
-                            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                    </svg>
-                </button>
-                <div class="dropdown__content">
-                    <a href="#" class="dropdown__content__bigtxt">WOMEN</a>
-                    <a href="#" class="dropdown__content__smalltxt">Dresses</a>
-                    <a href="#" class="dropdown__content__smalltxt">Tops</a>
-                    <a href="#" class="dropdown__content__smalltxt">Sweaters/Knits</a>
-                    <a href="#" class="dropdown__content__smalltxt">Jackets/Coats</a>
-                    <a href="#" class="dropdown__content__smalltxt">Blazers</a>
-                    <a href="#" class="dropdown__content__smalltxt">Denim</a>
-                    <a href="#" class="dropdown__content__smalltxt">Leggings/Pants</a>
-                    <a href="#" class="dropdown__content__smalltxt">Skirts/Shorts</a>
-                    <a href="#" class="dropdown__content__smalltxt">Accessories</a>
-                    <a href="#" class="dropdown__content__bigtxt">MEN</a>
-                    <a href="#" class="dropdown__content__smalltxt">Tees/Tank tops</a>
-                    <a href="#" class="dropdown__content__smalltxt">Shirts/Polos</a>
-                    <a href="#" class="dropdown__content__smalltxt">Sweaters</a>Sweaters
-                    <a href="#" class="dropdown__content__smalltxt">Sweatshirts/Hoodies</a>
-                    <a href="#" class="dropdown__content__smalltxt">Blazers</a>
-                    <a href="#" class="dropdown__content__smalltxt">Jackets/vests</a>
-                </div>
+
+                <details class="top__dropdown__details">
+                    <summary class="top__dropdown__details__summary">
+                        <span class="top__dropdown__heading">Browse</span>
+                        <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                        </svg>
+                    </summary>
+
+                    <div class="top__dropdown__details__content">
+
+                        <div class="top__dropdown__details__content__block">
+                            <h3 class="top__dropdown__bigtxt">WOMEN</h3>
+                            <a href="#" class="top__dropdown__smalltxt">Dresses</a>
+                            <a href="#" class="top__dropdown__smalltxt">Tops</a>
+                            <a href="#" class="top__dropdown__smalltxt">Sweaters/Knits</a>
+                            <a href="#" class="top__dropdown__smalltxt">Jackets/Coats</a>
+                            <a href="#" class="top__dropdown__smalltxt">Blazers</a>
+                            <a href="#" class="top__dropdown__smalltxt">Denim</a>
+                            <a href="#" class="top__dropdown__smalltxt">Leggings/Pants</a>
+                            <a href="#" class="top__dropdown__smalltxt">Skirts/Shorts</a>
+                            <a href="#" class="top__dropdown__smalltxt">Accessories</a>
+                        </div>
+
+                        <div class="top__dropdown__details__content__block">
+                            <h3 class="top__dropdown__bigtxt">MEN</h3>
+                            <a href="#" class="top__dropdown__smalltxt">Tees/Tank tops</a>
+                            <a href="#" class="top__dropdown__smalltxt">Shirts/Polos</a>
+                            <a href="#" class="top__dropdown__smalltxt">Sweaters</a>
+                            <a href="#" class="top__dropdown__smalltxt">Sweatshirts/Hoodies</a>
+                            <a href="#" class="top__dropdown__smalltxt">Blazers</a>
+                            <a href="#" class="top__dropdown__smalltxt">Jackets/vests</a>
+                        </div>
+
+
+                    </div>
+
+                </details>
+
             </div>
 
             <form class="top__search" action="" method="get">
@@ -63,6 +80,7 @@
         </div>
 
         <div class="top__right">
+
             <div class="top__right__img">
                 <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                     <path
@@ -72,53 +90,79 @@
 
             <div class="top__right__dropdown">
 
-                <button class="top__right__button">My Account
-                    <svg width="10" height="10" fill="#f16d7f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path
-                            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                    </svg>
-                </button>
+                <details class="top__right__dropdown__details">
 
-                <div class="top__right__menu">
-                    <a href="#">
-                        <figure class="dropdown_fig">
-                            <div>
-                                <img src="" alt=""><img src="" alt="">
-                            </div>
-                            <div>
-                                <figcaption>Rebox Zane</figcaption>
-                                <img src="" alt="">
-                                <p>1 x $250</p>
-                            </div>
-                        </figure>
-                    </a>
+                    <summary class="top__right__dropdown__details__summary">
+                        <span class="top__right__dropdown__header">My Account</span>
+                        <svg class="top__right__dropdown__svg" width="10" height="10" fill="#f16d7f"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                        </svg>
+                    </summary>
 
-                    <a href="#">
-                        <figure class="dropdown_fig">
-                            <div>
-                                <img src="" alt=""><img src="" alt="">
-                            </div>
-                            <div>
-                                <figcaption>Rebox Zane</figcaption>
-                                <img src="" alt="">
-                                <p>1 x $250</p>
-                            </div>
-                        </figure>
-                    </a>
+                    <div class="top__right__dropdown__menu">
 
-                    <div>
-                        <div>
-                            <p>TOTAL</p>
+                        <a href="#" class="top__right__dropdown__link1">
+                            <div class="top__right__dropdown__block">
+
+                                <img src="Image/dropdown2.jpg" alt="men" class="top__right__dropdown__img">
+
+                                <div class="top__right__dropdown__miniblock">
+                                    <h4 class="top__right__dropdown__miniblock__heading">Rebox Zane</h4>
+                                    <span class="top__right__dropdown__miniblock__stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </span>
+
+                                    <p class="top__right__dropdown__miniblock__txt">1 x $250</p>
+                                </div>
+
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+
+                        <a href="#" class="top__right__dropdown__link1">
+                            <div class="top__right__dropdown__block">
+
+                                <img src="Image/dropdown1.jpg" alt="men" class="top__right__dropdown__img">
+
+                                <div class="top__right__dropdown__miniblock">
+                                    <h4 class="top__right__dropdown__miniblock__heading">Rebox Zane</h4>
+                                    <span class="top__right__dropdown__miniblock__stars">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </span>
+
+                                    <p class="top__right__dropdown__miniblock__txt">1 x $250</p>
+                                </div>
+
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+
+
+                        <div class="top__right__dropdown__price">
+                            <div class="top__right__dropdown__price__left">
+                                <p class="top__right__dropdown__price__paragraf">TOTAL</p>
+                            </div>
+                            <div class="top__right__dropdown__price__right">
+                                <p class="top__right__dropdown__price__paragraf">$500.00</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>$500.00</p>
-                        </div>
+
+                        <a href="#" class="top__right__dropdown__link2"> Checkout </a>
+
+                        <a href="#" class="top__right__dropdown__link2">Go to car</a>
+
                     </div>
-
-                    <button>Checkout</button>
-                    <button>Go to cart</button>
-                </div>
-
+                </details>
             </div>
 
         </div>
@@ -289,12 +333,30 @@
 
     <section class="sale center">
         <div class="sale__box">
-            <a href="#" class="item1"></a>
-            <a href="#" class="item2"></a>
-            <a href="#" class="item3"></a>
-            <a href="#" class="item4"></a>
-            <a href="#" class="item5"></a>
-            <a href="#" class="item6"></a>
+            <a href="#" class="sale__box__item1">
+                <div class="sale__box__content">
+                    <h5 class="sale__box__content__subtitle">HOT DEAL</h5>
+                    <h4 class="sale__box__content__title">FOR MEN</h4>
+                </div>
+            </a>
+            <a href="#" class="sale__box__item2">
+                <div class="sale__box__content">
+                    <h5 class="sale__box__content__subtitle">30% offer</h5>
+                    <h4 class="sale__box__content__title">women</h4>
+                </div>
+            </a>
+            <a href="#" class="sale__box__item3">
+                <div class="sale__box__content">
+                    <h5 class="sale__box__content__subtitle">LUXIROUS & trendy</h5>
+                    <h4 class="sale__box__content__title">ACCESORIES</h4>
+                </div>
+            </a>
+            <a href="#" class="sale__box__item4">
+                <div class="sale__box__content">
+                    <h5 class="sale__box__content__subtitle">new arrivals</h5>
+                    <h4 class="sale__box__content__title">FOR kids</h4>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -648,9 +710,95 @@
 </html>
 
 <!-- каталог - как сделать при наведении серый пресет и прозрачную кнопку
-грид - ссылки на группу товаров
 доделать везде одинаковые выпадающие
 задать вопрос про фигуру и блок
 сделать эффект наведения с розовыми границами в корзине
 везде на кнопках одинаковый эффект наведения
-полоску наверху сделать спаном -->
+полоску наверху сделать спаном 
+дядьку поменять, прописать префиксы
+поменять кнопку на ссылку внизу-->
+
+
+<!-- <div class="filter-sort">
+
+                    <details class="filter">
+                        <summary class="filter__summary">
+                            <span class="filter__heading">FILTER</span>
+                            <svg width="15" heigth="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M151.6 469.6C145.5 476.2 137 480 128 480s-17.5-3.8-23.6-10.4l-88-96c-11.9-13-11.1-33.3 2-45.2s33.3-11.1 45.2 2L96 365.7V64c0-17.7 14.3-32 32-32s32 14.3 32 32V365.7l32.4-35.4c11.9-13 32.2-13.9 45.2-2s13.9 32.2 2 45.2l-88 96zM320 480c-17.7 0-32-14.3-32-32s14.3-32 32-32h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H320zm0-128c-17.7 0-32-14.3-32-32s14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H320zm0-128c-17.7 0-32-14.3-32-32s14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320zm0-128c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H320z" />
+                            </svg>
+                        </summary>
+            
+                        <div class="filter__content">
+            
+                            <details class="filter__item" open>
+                                <summary class="filter__heading__down">CATEGORY</summary>
+                                <div class="filter__link-box">
+                                    <a href="#" class="filter__link">Link 1</a>
+                                    <a href="#" class="filter__link">Link 2</a>
+                                    <a href="#" class="filter__link">Link 3</a>
+                                </div>
+                            </details>
+            
+                            <details class="filter__item">
+                                <summary class="filter__heading__down">BRAND</summary>
+                                <div class="filter__link-box">
+                                    <a href="#" class="filter__link">Link 1</a>
+                                    <a href="#" class="filter__link">Link 2</a>
+                                    <a href="#" class="filter__link">Link 3</a>
+                                </div>
+                            </details>
+            
+                            <details class="filter__item">
+                                <summary class="filter__heading__down">DESIGHNER</summary>
+                                <div class="filter__link-box">
+                                    <a href="#" class="filter__link">Link 1</a>
+                                    <a href="#" class="filter__link">Link 2</a>
+                                    <a href="#" class="filter__link">Link 3</a>
+                                </div>
+                            </details>
+            
+                        </div>
+            
+            
+                    </details>
+            
+                    <div class="sort">
+            
+                        <details class="sort__details">
+                            <summary class="sort__summary"> <span class="sort__heading">TRENDING NOW</span>
+                                <svg width="10" heigth="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z" />
+                                </svg>
+                            </summary>
+                        </details>
+            
+                        <details class="sort__details">
+            
+                            <summary class="sort__summary"> <span class="sort__heading">SIZE</span>
+                                <svg width="10" heigth="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z" />
+                                </svg>
+                            </summary>
+            
+                            <div class="sort__box">
+                                <div class="sort__check">
+                                    <input id="sort__check1" type="checkbox">
+                                    <label for="sort__check1">XS</label>
+                                </div>
+                                <div class="sort__check">
+                                    <input id="sort__check2" type="checkbox">
+                                    <label for="sort__check2">S</label>
+                                </div>
+                                <div class="sort__check">
+                                    <input id="sort__check3" type="checkbox">
+                                    <label for="sort__check3">L</label>
+                                </div>
+                            </div>
+                        </details>
+            
+                    </div>
+                </div>-->

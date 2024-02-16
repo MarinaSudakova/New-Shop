@@ -1,5 +1,4 @@
 $standartWidth: 1140px;
 $standartColor: #f16d7f;
-$gapKatalog: $standartWidth/38;
-$widthGrid: (
-    $standartWidth - 20) / 2;
+$gapKatalog: calc($standartWidth / 38);
+$widthGrid: calc(($standartWidth - 20px) / 2);
