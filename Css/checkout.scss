@@ -1,5 +1,7 @@
 @import 'vars';
 
+// стандартные стили
+
 %topTextStyle {
     line-height: 32px;
     font-weight: 300;
@@ -7,12 +9,12 @@
     color: #222222;
 }
 
-%formStyle {
+%formStyleSubtitle {
     font-size: 13px;
     line-height: 1.2;
-    font-weight: 300;
-    color: #b1b1b1;
-    border: 1px solid #eaeaea;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
 }
 
 %formStyleTitle {
@@ -21,6 +23,33 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #222222;
+}
+
+%formStyleTxt {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+}
+
+// БЭМ
+
+.buttton {
+    display: inline-block;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    background-color: #ffffff;
+}
+
+.buttton:hover {
+    color: $standartColor;
+    border: 1px solid $standartColor;
 }
 
 * {
@@ -47,6 +76,13 @@ summary::-webkit-detals-marker {
     font-weight: 400;
     text-transform: uppercase;
     color: #e4af48;
+}
+
+.fa-angle-double-right {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
 }
 
 
@@ -454,230 +490,152 @@ summary::-webkit-detals-marker {
     }
 }
 
-.middle {
+.shipping {
     margin-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 93px;
 
-    &__line {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eaeaea;
+
+    &__dropdown {
+        border-bottom: 1px solid #e8e8e8;
         display: flex;
-        align-items: center;
+        position: relative;
+        width: 100%;
+    }
 
-        &__itembig {
-            width: 40%;
+    &__details {
+        width: 100%;
+        z-index: 10;
+
+        &[open] .shipping__details__big {
+            color: $standartColor;
         }
 
-        &__itemsmall {
-            width: 12%;
+        &__summary {
+            padding: 19px 0;
             display: flex;
-            justify-content: center;
+            align-items: center;
         }
 
-        &__linkbox {
-            width: 100%;
-            padding-top: 24px;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    &__line:last-of-type {
-        border: none;
-    }
-
-    &__block {
-        display: flex;
-        gap: 20px;
-        transition: scale 0.3s;
-
-        &__container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-top: 20px;
-        }
-
-        &__title {
-            margin-bottom: 28px;
-            font-size: 13px;
-            line-height: 1.2;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: #222222;
-        }
-
-        &__subtitle {
-            font-size: 13px;
-            line-height: 20px;
-            font-weight: 300;
-            color: #6f6e6e;
-        }
-    }
-
-    &__block:hover {
-        transform: scale(1.05);
-    }
-
-    &__txt {
-        font-size: 13px;
-        line-height: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: -0.015em;
-        color: #222222;
-    }
-
-    &__txt1 {
-        font-size: 13px;
-        line-height: 20px;
-        font-weight: 400;
-        color: #656565;
-    }
-
-    &__txt2 {
-        padding: 8px 16px;
-        font-size: 13px;
-        line-height: 20px;
-        font-weight: 400;
-        color: #656565;
-        border: 1px solid #eaeaea;
-    }
-
-    &__fa {
-        font-size: 16px;
-        line-height: 1.2;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #c0c0c0;
-    }
-
-    &__link {
-        padding: 1rem 3rem;
-        border: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        font-size: 14px;
-        line-height: 1.2;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #4a4a4a;
-    }
-
-    &__link:hover {
-        border: 1px solid $standartColor;
-        color: $standartColor;
-    }
-}
-
-
-.registration {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-
-    &__block {
-        width: 28%;
-
-        &__title {
-            padding-bottom: 22px;
+        &__big {
             @extend %formStyleTitle;
         }
 
-        &__form {
-            width: 100%;
+        &__content {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            padding-top: 20px;
+            padding-bottom: 79px;
+
+        }
+
+        &__left {
+            width: 60%;
+            padding-left: 30px;
         }
 
 
-        &__select {
-            @extend %formStyle;
-            width: 100%;
-            padding: 16px 20px;
+        &__right {
+            width: 40%;
+        }
+
+        &__medium {
+            margin-bottom: 15px;
+            @extend %formStyleSubtitle;
+        }
+
+        &__txt {
+            @extend %formStyleTxt;
+            margin-bottom: 31px;
+        }
+
+        &__chb {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            display: block;
+            @extend %formStyleTxt;
+            margin-bottom: 15px;
+        }
+
+        &__link:hover .fa-angle-double-right {
+            color: $standartColor;
+        }
+
+        &__link:hover {
+            color: $standartColor;
+        }
+
+        &__button {
+            margin-top: 20px;
+
+        }
+    }
+
+
+
+    &__checkbox {
+        color: #222222;
+    }
+
+    &__label {
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #222222;
+        margin-left: 20px;
+    }
+
+    &__form {
+
+        &__txt {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #222222;
+            margin-bottom: 16px;
+        }
+
+        &__cpecial {
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #ff0d0d;
         }
 
         &__inp {
             width: 100%;
-            padding: 16px 0px 16px 20px;
-            box-sizing: border-box;
-            @extend %formStyle;
-        }
-
-        &__send {
-            border: 1px solid #eaeaea;
-            font-size: 11px;
-            line-height: 1.2;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #4a4a4a;
-            padding: 1rem 1rem;
             background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            margin-bottom: 23px;
+            min-height: 45px;
         }
 
-        &__subtitle {
-            padding: 5px 0;
-            font-size: 14px;
-            line-height: 1.2;
-            font-weight: 300;
-            color: #000000;
-            margin-bottom: 15px;
-        }
-    }
-
-    &__block1 {
-        width: 28%;
-        padding: 40px 42px;
-        background-color: #f5f3f3;
-        height: 80%;
-
-        &__subtitle {
-            font-size: 11px;
-            line-height: 1.2;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: #4a4a4a;
-            text-align: right;
-            padding-bottom: 14px;
-        }
-
-        &__title {
-            @extend %formStyleTitle;
-            border-bottom: 1px solid #e2e2e2;
-            padding-bottom: 22px;
-            text-align: right;
-        }
-
-        &__special {
-            color: $standartColor;
+        &__bottom {
+            display: flex;
+            padding-top: 32px;
+            align-items: center;
         }
 
         &__link {
-            margin-top: 25px;
-            display: block;
-            text-align: center;
-            padding: 18px 0;
-            background-color: $standartColor;
-            font-size: 16px;
-            line-height: 1.2;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #ffffff;
-
+            display: inline-block;
+            padding-left: 32px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #222222;
         }
 
         &__link:hover {
-            background-color: #ffffff;
             color: $standartColor;
-            border: 1px solid $standartColor;
         }
     }
+
 }
 
+
 .subscribe {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
