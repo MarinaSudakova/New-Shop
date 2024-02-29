@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Css/styleshopping.css">
-    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Css/stylesingle.css">
+    <title>Single Page</title>
 </head>
 
 <body>
@@ -176,7 +176,7 @@
             <ul class="menu">
                 <li class="menu__list"><a href="#" class="nav__conteiner__link">Home</a></li>
                 <li class="menu__list">
-                    <a href="#" class="nav__conteiner__link">Man</a>
+                    <a href="product.html" class="nav__conteiner__link">Man</a>
                 </li>
                 <li class="menu__list"><a href="#" class="nav__conteiner__link">Women</a></li>
                 <li class="menu__list"><a href="#" class="nav__conteiner__link">Kids</a></li>
@@ -210,7 +210,7 @@
                             <a href="product.html" class="breadcrumbs__link">MEN</a>
                         </li>
                         <li class="breadcrumbs__li">
-                            <a href="shopping-cart.html" class="breadcrumbs__link">NEW ARRIVALS</a>
+                            <a href="single-page.html" class="breadcrumbs__link">NEW ARRIVALS</a>
                         </li>
                     </ul>
 
@@ -219,148 +219,214 @@
         </div>
     </section>
 
-    <section class="middle-block">
-
-        <div class="middle center">
-
-            <div class="middle__line">
-                <div class="middle__line__itembig"> <span class="middle__txt">Product Details</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt">unite Price</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt">Quantity</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt">shipping</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt">Subtotal</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt">ACTION</span></div>
+    <section class="big-gallery">
+        <div class="gallery">
+            <div class="gallery__left">
+                <a href="#" class="gallery__link">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
             </div>
+            <div class="gallery__middle">
+                <img src="Image/big_woman.jpg" alt="woman" class="gallery__img">
+            </div>
+            <div class="gallery__right">
+                <a href="#" class="gallery__link">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-            <div class="middle__line">
+    <section class="regstration-form">
+        <div class="registration">
 
-                <div class="middle__line__itembig">
-                    <a href="#" class="middle__block">
-                        <img src="Image/order1.jpg" alt="men" class="middle__block__img">
-                        <div class="middle__block__container">
-                            <h3 class="middle__block__title">Mango People T-shirt</h3>
-                            <h4 class="middle__block__subtitle"><b>Color:</b> Red</h4>
-                            <h4 class="middle__block__subtitle"><b>Size:</b> Xll</h4>
+            <div class="registration__container">
+
+                <div class="registration__top">
+                    <h3 class="registration__top__subtitle">WOMEN COLLECTION</h3>
+                    <h2 class="registration__top__title">Moschino Cheap And Chic</h2>
+                    <p class="registration__top__txt">Compellingly actualize fully researched processes before proactive
+                        outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                        Completely visualize parallel core competencies rather than exceptional portals.</p>
+
+                    <p class="registration__top__txt1">MATERIAL: <span class="registration__special">COTTON </span>
+                        DESIGNER: <span class="registration__special">BINBURHAN</span></p>
+
+                    <h3 class="registration__top__price">$561</h3>
+
+                </div>
+
+                <div class="registration__bottom">
+                    <form action="#" class="registration__form">
+
+                        <div class="registration__form__block">
+                            <h3 class="registration__form__title">CHOOSE COLOR</h3>
+
+                            <details class="registration__dropdown">
+
+                                <summary class="registration__dropdown__summary">
+                                    <span class="registration__dropdown__txt"><i class="fa fa-square"
+                                            aria-hidden="true"></i> Red</span>
+                                    <span class="registration__dropdown__arrow"><i class="fa fa-angle-down"
+                                            aria-hidden="true"></i></span>
+                                </summary>
+
+                                <div class="registration__dropdown__content">
+                                    <div class="registration__dropdown__item">
+                                        <span class="registration__dropdown__txt"><i class="fa fa-square"
+                                                aria-hidden="true"></i> Red</span>
+                                        <span class="registration__dropdown__arrow"></span>
+                                    </div>
+                                    <div class="registration__dropdown__item">
+                                        <span class="registration__dropdown__txt"><i class="fa fa-square"
+                                                aria-hidden="true"></i> Red</span>
+                                        <span class="registration__dropdown__arrow"></span>
+                                    </div>
+                                    <div class="registration__dropdown__item">
+                                        <span class="registration__dropdown__txt"><i class="fa fa-square"
+                                                aria-hidden="true"></i> Red</span>
+                                        <span class="registration__dropdown__arrow"></span>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
+
+                        <div class="registration__form__block">
+                            <h3 class="registration__form__title">CHOOSE SIZE</h3>
+
+                            <details class="registration__dropdown">
+
+                                <summary class="registration__dropdown__summary">
+                                    <span class="registration__dropdown__txt"> XXL</span>
+                                    <span class="registration__dropdown__arrow"><i class="fa fa-angle-down"
+                                            aria-hidden="true"></i></span>
+                                </summary>
+
+                                <div class="registration__dropdown__content">
+                                    <div class="registration__dropdown__item">
+                                        <span class="registration__dropdown__txt">XL</span>
+                                        <span class="registration__dropdown__arrow"></span>
+                                    </div>
+                                    <div class="registration__dropdown__item">
+                                        <span class="registration__dropdown__txt"> L</span>
+                                        <span class="registration__dropdown__arrow"></span>
+                                    </div>
+                                    <div class="registration__dropdown__item">
+                                        <span class="registration__dropdown__txt">S</span>
+                                        <span class="registration__dropdown__arrow"></span>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="registration__form__block">
+                            <h3 class="registration__form__title">QUANTITY</h3>
+
+                            <input type="number" class="registration__form__input" value="2" max="99">
+                        </div>
+
+
+                        <div class="registration__form__block4">
+                            <button class="registration__form__button">
+                                <img src="Image/linkbin.png" alt="bin" class="registration__form__bin">
+                                <span class="registration__form__linktxt">Add to Cart</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="katalog center">
+
+        <div class="katalog__top">
+            <h2 class="katalog__top__title">you may like also</h2>
+        </div>
+
+        <div class="katalog__middle">
+
+            <div class="miditem">
+                <div class="miditem__container">
+                    <a href="#" class="miditem__container__link">
+                        <img src="Image/wom__kat.jpg" alt="human" class="miditem__container_img">
+                        <h3 class="miditem__container__title">BLAZE LEGGINGS</h3>
+                        <p class="miditem__container__txt">$52.00</p>
                     </a>
                 </div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">$150</span></div>
-                <div class="middle__line__itemsmall">
-                    <input type="number" value="2" max="99" class="middle__input">
-                </div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">FREE</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">$300</span></div>
-                <div class="middle__line__itemsmall"><i class="fa fa-times-circle middle__fa" aria-hidden="true"></i>
-                </div>
-            </div>
 
-            <div class="middle__line">
+                <div class="miditem__basket">
+                    <a href="shopping-cart.html" class="miditem__basket__link">
+                        <img class="miditem__basket__img" src="Image/basket.png" alt="basket">
 
-                <div class="middle__line__itembig">
-                    <a href="#" class="middle__block">
-                        <img src="Image/order2.jpg" alt="men" class="middle__block__img">
-                        <div class="middle__block__container">
-                            <h3 class="middle__block__title">Mango People T-shirt</h3>
-                            <h4 class="middle__block__subtitle"><b>Color:</b> Red</h4>
-                            <h4 class="middle__block__subtitle"><b>Size:</b> Xll</h4>
-                        </div>
+                        <p class="miditem__basket__txt">Add to Cart</p>
                     </a>
                 </div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">$150</span></div>
-                <div class="middle__line__itemsmall"> <input type="number" value="2" max="99" class="middle__input">
-                </div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">FREE</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">$300</span></div>
-                <div class="middle__line__itemsmall"><i class="fa fa-times-circle middle__fa" aria-hidden="true"></i>
-                </div>
+
             </div>
 
-            <div class="middle__line">
-
-                <div class="middle__line__itembig">
-                    <a href="#" class="middle__block">
-                        <img src="Image/order3.jpg" alt="men" class="middle__block__img">
-                        <div class="middle__block__container">
-                            <h3 class="middle__block__title">Mango People T-shirt</h3>
-                            <h4 class="middle__block__subtitle"><b>Color:</b> Red</h4>
-                            <h4 class="middle__block__subtitle"><b>Size:</b> Xll</h4>
-                        </div>
+            <div class="miditem">
+                <div class="miditem__container">
+                    <a href="#" class="miditem__container__link">
+                        <img src="Image/wom__kat.jpg" alt="human" class="miditem__container_img">
+                        <h3 class="miditem__container__title">ALEXA SWEATER</h3>
+                        <p class="miditem__container__txt">$52.00</p>
                     </a>
                 </div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">$150</span></div>
-                <div class="middle__line__itemsmall"> <input type="number" value="2" max="99" class="middle__input">
+
+                <div class="miditem__basket">
+                    <a href="shopping-cart.html" class="miditem__basket__link">
+                        <img class="miditem__basket__img" src="Image/basket.png" alt="basket">
+
+                        <p class="miditem__basket__txt">Add to Cart</p>
+                    </a>
                 </div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">FREE</span></div>
-                <div class="middle__line__itemsmall"><span class="middle__txt1">$300</span></div>
-                <div class="middle__line__itemsmall"><i class="fa fa-times-circle middle__fa" aria-hidden="true"></i>
-                </div>
+
             </div>
 
-            <div class="middle__line">
-                <div class="middle__line__linkbox">
-                    <a href="#" class="middle__link">cLEAR SHOPPING CART</a>
-                    <a href="#" class="middle__link">cONTINUE sHOPPING</a>
+            <div class="miditem">
+                <div class="miditem__container">
+                    <a href="#" class="miditem__container__link">
+                        <img src="Image/wom__kat.jpg" alt="human" class="miditem__container_img">
+                        <h3 class="miditem__container__title">AGNES TOP</h3>
+                        <p class="miditem__container__txt">$52.00</p>
+                    </a>
+                </div>
+
+                <div class="miditem__basket">
+                    <a href="shopping-cart.html" class="miditem__basket__link">
+                        <img class="miditem__basket__img" src="Image/basket.png" alt="basket">
+
+                        <p class="miditem__basket__txt">Add to Cart</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="miditem">
+                <div class="miditem__container">
+                    <a href="#" class="miditem__container__link">
+                        <img src="Image/wom__kat.jpg" alt="human" class="miditem__container_img">
+                        <h3 class="miditem__container__title">SYLVA SWEATER</h3>
+                        <p class="miditem__container__txt">$52.00</p>
+                    </a>
+                </div>
+
+                <div class="miditem__basket">
+                    <a href="shopping-cart.html" class="miditem__basket__link">
+                        <img class="miditem__basket__img" src="Image/basket.png" alt="basket">
+
+                        <p class="miditem__basket__txt">Add to Cart</p>
+                    </a>
                 </div>
 
             </div>
 
         </div>
 
+
     </section>
-
-    <section class="registration-block">
-        <div class="registration center">
-
-            <div class="registration__block">
-                <h3 class="registration__block__title">Shipping Adress</h3>
-                <form action="#" class="registration__block__form">
-                    <p class="registration__block__input">
-                        <select class="registration__block__select" required>
-                            <option class="registration__block__option" value="city">Bangladesh</option>
-                            <option class="registration__block__option" value="city">Moscow</option>
-                            <option class="registration__block__option" value="city">New-York</option>
-                        </select>
-                    </p>
-                    <p class="registration__block__input">
-                        <input type="text" class="registration__block__inp" required placeholder="State">
-                    </p>
-                    <p class="registration__block__input">
-                        <input type="text" class="registration__block__inp" required placeholder="Postcode / Zip">
-                    </p>
-                    <p>
-                        <button class="registration__block__send" type="submit">get a quote</button>
-                    </p>
-                </form>
-            </div>
-
-            <div class="registration__block">
-                <h3 class="registration__block__title">coupon discount</h3>
-                <p class="registration__block__subtitle">
-                    Enter your coupon code if you have one
-                </p>
-                <form action="#" class="registration__block__form">
-                    <p class="registration__block__input">
-                        <input type="text" class="registration__block__inp" required placeholder="State">
-                    </p>
-                    <p>
-                        <button class="registration__block__send" type="submit">Apply coupon</button>
-                    </p>
-                </form>
-            </div>
-
-            <div class="registration__block1">
-                <p class="registration__block1__subtitle">
-                    Sub total $900
-                </p>
-                <p class="registration__block1__title">
-                    GRAND TOTAL <span class="registration__block1__special"> $900</span>
-                </p>
-                <a href="checkout.html" class="registration__block1__link">proceed to checkout</a>
-            </div>
-
-        </div>
-    </section>
-
 
 
     <section class="subscribe-repeat">

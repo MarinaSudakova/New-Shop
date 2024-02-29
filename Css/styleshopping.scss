@@ -545,6 +545,13 @@ summary::-webkit-detals-marker {
         border: 1px solid #eaeaea;
     }
 
+    &__input {
+        border: 1px solid #eaeaea;
+        padding: 11px;
+        width: 30px;
+        text-align: center;
+    }
+
     &__fa {
         font-size: 16px;
         line-height: 1.2;
